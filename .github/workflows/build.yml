@@ -28,15 +28,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          cd ./src
+          cd src
           npm install
-          cd ./src
+          cd src/src
           node photoDataGenerator.js
           npm run build
-          cd ..
-          cd ..
-          rm -rf ./docs
-          cp -r ./src/build ./docs
+          rm -rf docs
+          cp -r src/build docs
           
       - name: Commit and push changes
         run: |
