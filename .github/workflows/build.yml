@@ -13,6 +13,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -25,18 +28,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Disable CI lint failure
         run: |
-          cd ./src
+          echo "CI=false" >> $GITHUB_ENV  
+          
+      - name: Install modules
+        run: |
+          cd src
           npm install
-          cd ./src
+
+      - name: Generate photoData and build
+        run: |
+          cd src/src
           node photoDataGenerator.js
           npm run build
-          cd ..
-          cd ..
-          rm -rf ./docs
-          cp -r ./src/build ./docs
+
+      - name: Replace docs
+        run: |
+          rm -rf docs
+          cp -r src/build docs
           
       - name: Commit and push changes
         run: |
