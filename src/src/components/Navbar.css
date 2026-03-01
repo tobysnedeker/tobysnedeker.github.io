@@ -1,0 +1,39 @@
+nav {
+  background: linear-gradient(to top, #4D4B47, #2e2e2e 25%, #2e2e2e 75%, #4D4B47 );
+  align-items: center;
+  padding: 0 !important;
+  height: 10vh;
+}
+ 
+.navbar-brand {
+  color: white !important;
+  font-size: x-large !important;
+  text-align: left;
+  align-content: center;
+  padding: 1rem;
+}
+
+.navbar-text {
+  text-align: center;
+  align-items: center;
+  color: #FDE74C;
+  height: auto;
+  font-size: x-large;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  border-bottom: 5px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+
+  border-image: transparent 1;
+  transition: color 500ms ease;
+}
+
+.navbar-text:hover {
+  border-image: linear-gradient(to top, #26d0ff, transparent 80%) 1;
+  color: #fff39b;
+}

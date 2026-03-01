@@ -1,0 +1,43 @@
+.zalando-sans-expanded {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.google-sans-code {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  font-family: "Zalando Sans Expanded";
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  background-color: white;
+  height: 100%;
+}
+
+.fade-enter {
+  opacity: 0.5;
+  
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}

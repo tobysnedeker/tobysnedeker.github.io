@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#back {
+  position: fixed;
+  width: 6vw;
+  height: 6vh;
+  top: 2vh;
+  right: 1vw;
+}
+
+#back-img {
+  display: block;
+  object-fit: contain;
+
+  filter: grayscale(100%) brightness(170%);
+  width: 100%;
+  height: 100%;
+}
+
+#back-img:hover {
+  opacity: 80%;
+  filter: grayscale(100%) brightness(180%);
+  cursor: pointer;
+}
+
+#background {
+  position: fixed;
+  z-index: 0;
+
+  background-image: url("/public/resources/wall-background.jpg");
+  background-size: 1080px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  filter: brightness(95%);
+}
+
+#photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.photo-container {
+  display: flex;
+  /* padding-right: 3vw; */
+  /* padding-left: 3vw; */
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 1vw;
+  margin-right: 1vw;
+  max-width: 95vw;
+  max-height: 92vh;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#frame {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  width: 100%;
+  height: 100%;
+}
+
+#target-photo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+  border: solid 6px white ;
+  box-shadow: 0px 25px 50px 1px black;
+  box-sizing: border-box;
+}

@@ -1,0 +1,38 @@
+.swiper {
+  width: 100%;
+  height: 80vh;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 48px;
+
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  will-change: transform;
+}
+
+.link {
+  height: 100%;
+}
+
+.clickable-image {
+  cursor: pointer;
+  height: 100%;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #4D4B47;
+;
+}
