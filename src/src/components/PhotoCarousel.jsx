@@ -59,8 +59,6 @@ const PhotoCarousel = () => {
                 src={`/photos/${image.src}`}
                 className="d-block clickable-image"
                 alt={image.alt}
-                loading="lazy"
-                decoding="async"
               />
             </Link>
           </SwiperSlide>
