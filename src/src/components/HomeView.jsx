@@ -15,7 +15,8 @@ const HomeView = () => {
           fontWeight: '400'
         }}>
           Nice to meet you! I'm Toby Snedeker, a student at NC State University with a major in Computer Science and minor in Brewing Science. I'm passionate about many more things,
-          including rock climbing, cars, movies, and (especially) photography. I made this space to show off some of my favorite shots while exercising my web skills.
+          including rock climbing, cars, movies, and (especially) photography. I made this space to show off some of my favorite shots while exercising my web skills. To top it off, I 
+          picked up some new skills along the way, like using GitHub Actions to rebuild this page whenever I update the list of photos I want to display!
         </p>
       </div>
       <div style={{background: '#2e2e2e'}}>
