@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { CSSTransition, SwitchTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 import { useRef } from "react";
 
@@ -7,7 +7,6 @@ import './App.css';
 import HomeView from './components/HomeView';
 import PhotoGallery from './components/PhotoGallery';
 
-// const PhotoDisplay = lazy(() => import("./components/PhotoDisplay"));
 import PhotoDisplay from './components/PhotoDisplay';
 
 function App() {
@@ -31,14 +30,6 @@ function App() {
 
       </CSSTransition>
     </SwitchTransition>
-
-      // <Routes>
-      //   <Route path='/' element={<HomeView />} />
-      //   {/* <Route path='/photo/:filename' element={<Suspense fallback={null}><PhotoDisplay /></Suspense>} /> */}
-      //   <Route path='/photo/:filename' element={<PhotoDisplay />} />
-      //   <Route path='/gallery' element={<PhotoGallery />} />
-      // </Routes>
-    
   );
 }
 

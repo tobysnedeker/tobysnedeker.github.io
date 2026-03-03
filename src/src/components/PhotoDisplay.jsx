@@ -33,8 +33,6 @@ const PhotoDisplay = () => {
       </div>
 
     </>
-
-    // <div>Photo</div>
   );
 }
 

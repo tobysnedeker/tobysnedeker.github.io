@@ -65,14 +65,6 @@ const PhotoCarousel = () => {
         ))}
       </Swiper>
     </div>
-
-          //     <Link to="/photo/big.jpg">
-          //   <img
-          //     src="/photos/big.jpg"
-          //     className="d-block w-100 clickable-image"
-          //     alt="Photo"
-          //   />
-          // </Link>
   );
 };
 
