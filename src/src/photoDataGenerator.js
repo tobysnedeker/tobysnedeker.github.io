@@ -2,7 +2,7 @@ import fs from 'fs'
 
 const photoDir = '../public/photos';
 const outputFile = './photoData.js';
-const files = fs.readdirSync(photoDir);
+const files = fs.readdirSync(photoDir).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
 let images = [];
 let count = 1;
