@@ -1,5 +1,6 @@
-import './PhotoDisplay.css';
-import { useParams, Link } from 'react-router-dom';
+import './PhotoDisplay.css'
+import { useParams, Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 const PhotoDisplay = () => {
@@ -12,6 +13,18 @@ const PhotoDisplay = () => {
   } else {
     backLink = "/gallery"
   }
+
+  useEffect(() => {
+    if (back === "gallery") {
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+
+      return () => {
+        // Restore scroll
+        document.body.style.overflow = "";
+      };
+    }
+  }, []);
 
   return (
     <>

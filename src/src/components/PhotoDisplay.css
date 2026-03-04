@@ -3,6 +3,10 @@
   z-index: 1;
 }
 
+body {
+  background: black;
+}
+
 #back {
   position: fixed;
   width: 6vw;

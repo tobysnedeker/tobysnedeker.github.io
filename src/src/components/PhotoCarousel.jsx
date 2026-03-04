@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +10,7 @@ import './PhotoCarousel.css'
 import { images } from "../photoData"
 
 const PhotoCarousel = () => {
+  const location = useLocation();
   const swiperRef = useRef(null);
 
   useEffect(() => {
@@ -54,7 +55,7 @@ const PhotoCarousel = () => {
       >
         {imagesLimited.map(image => (
           <SwiperSlide>
-            <Link to={`/photo/carousel/${image.src}`} className="link">
+            <Link to={`/photo/carousel/${image.src}`} state={{backgroundLocation: location}} className="link">
               <img
                 src={`/photos/${image.src}`}
                 className="d-block clickable-image"
