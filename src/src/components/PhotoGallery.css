@@ -29,7 +29,7 @@
 
 .gallery {
   margin-right: 4vw;
-  align-self: start;
+  justify-content: center;
 }
 
 .gallery-item {
