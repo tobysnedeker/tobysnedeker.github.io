@@ -35,7 +35,7 @@ jobs:
       - name: Install modules
         run: |
           cd src
-          npm install
+          npm ci
 
       - name: Generate photoData and build
         run: |
